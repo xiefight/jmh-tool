@@ -1,0 +1,3 @@
+JMH S 24 cn.xt.jmh.MyJITBenchmark S 53 cn.xt.jmh.jmh_generated.MyJITBenchmark_testC1_jmhTest S 6 testC1 S 11 AverageTime E A 1 1 1 E I 1 5 T 3 1 s E E E E I 1 1 E E L 2 6 -Xms1g 6 -Xmx1g L 1 23 -XX:TieredStopAtLevel=1 E E U 11 NANOSECONDS E E 
+JMH S 24 cn.xt.jmh.MyJITBenchmark S 54 cn.xt.jmh.jmh_generated.MyJITBenchmark_testJIT_jmhTest S 7 testJIT S 11 AverageTime E A 1 1 1 E I 1 5 T 3 1 s E E E E I 1 1 E E L 2 6 -Xms1g 6 -Xmx1g E E E U 11 NANOSECONDS E E 
+JMH S 24 cn.xt.jmh.MyJITBenchmark S 56 cn.xt.jmh.jmh_generated.MyJITBenchmark_testNoJIT_jmhTest S 9 testNoJIT S 11 AverageTime E A 1 1 1 E I 1 5 T 3 1 s E E E E I 1 1 E E L 2 6 -Xms1g 6 -Xmx1g L 1 5 -Xint E E U 11 NANOSECONDS E E 

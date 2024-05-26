@@ -1,0 +1,20 @@
+正确地测试代码性能
+
+OpenJDK中提供了一款叫JMH（Java Microbenchmark Harness）的工具，可以准确的对Java代码进行基准测试，量化方法的执行性能。
+
+官网地址：https://github.com/openjdk/jmh
+
+JMH会首先执行预热过程，确保JIT对代码进行优化之后再进行真正的迭代测试，最后输出测试的结果
+
+
+JMH环境搭建：
+- 创建基准测试项目，在CMD窗口中，使用以下命令创建JMH环境项目：
+mvn archetype:generate  -DinteractiveMode=false  -DarchetypeGroupId=org.openjdk.jmh  -DarchetypeArtifactId=jmh-java-benchmark-archetype  -DgroupId=cn.xt.jmh  -DartifactId=jmh-init  -Dversion=1.0
+
+- 修改pom文件中JDK版本号1.8和JMH版本号1.37
+
+
+如何运行
+1. 使用 mvn clean verify 打包成jar包
+2. java -jar target/benchmarks.jar
+    也可以使用main方法本地执行
